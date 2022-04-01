@@ -99,12 +99,15 @@ h3 {
 }
 
 .fade-out {
-    animation: fade-out 3s forwards;
+    animation: fade-out 4s forwards;
 }
 
 @keyframes fade-out {
-    from { /** last state **/ }
-    to { 
+    0% { /** last state **/ }
+    25% { 
+        opacity: 1;
+    }
+    100% { 
         opacity: 0;
         visibility: hidden;
     }
